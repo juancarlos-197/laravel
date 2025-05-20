@@ -13,10 +13,9 @@ Route::get('/', function () {
 Route::get('cursos', function () {
     return "Bienvenido al curso" ;
 });
-Route::get('cursos/{curso}', function ($curso) {
-    return "Bienvenido al curso: $curso" ;
-});
-
 Route::get('cursos/create', function () {
     return "En esta página podria crear un curso";
+});
+Route::get('cursos/{curso}', function ($curso) {
+    return "Bienvenido al curso: $curso" ;
 });
