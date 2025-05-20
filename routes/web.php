@@ -9,10 +9,14 @@ Route::get('/', function () {
     return "Bienvenido" ;
 
 });
-Route::get('/curso', function () {
 
-    
-   // return view('welcome');
+Route::get('cursos', function () {
     return "Bienvenido al curso" ;
+});
+Route::get('cursos/{curso}', function ($curso) {
+    return "Bienvenido al curso: $curso" ;
+});
 
+Route::get('cursos/create', function () {
+    return "En esta página podria crear un curso";
 });
